@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.navbar {
+    background-color: #FD6569;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#left {
+    position: absolute;
+    color: white;
+    right: 10px;
+    top: 10px;
+}
+
+.container {
+    padding: 10px;
+}
+
+.book-container {
+    width: 30%;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.book-container h1 {
+    color: #FD6569;
+}
+
+.book-container button {
+    background-color: #FD6569;
+    color: black;
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 40%;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.add-button {
+    background-color: #FD6569;
+    color: white;
+    font-size: 39px;
+    font-weight: bold;
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
