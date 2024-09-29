@@ -91,7 +91,8 @@
     text-align: center;
 }
 
-.popup-box input, textarea {
+.popup-box input,
+textarea {
     background-color: transparent;
     font-size: 20px;
     width: 100%;
@@ -115,10 +116,12 @@
     border-radius: 20px;
 }
 
-.popup-box input::placeholder, textarea::placeholder {
+.popup-box input::placeholder,
+textarea::placeholder {
     color: black
 }
 
-.popup-box input:focus, textarea:focus {
+.popup-box input:focus,
+textarea:focus {
     outline: none;
 }
