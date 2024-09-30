@@ -28,11 +28,11 @@ let description = document.getElementById("book-short-description");
 addBook.addEventListener("click", function(event){
     event.preventDefault();
     var div = document.createElement("div");
-    div.setAttribute("class","book-container");     //"${}" template literals
+    div.setAttribute("class","book-container");     //"${}" template literals, `backticks`
     div.innerHTML = `<h1>${bookTitle.value}</h1>
                      <h2>${authorName.value}</h2>
                      <p>${description.value}</p>
-                     <button id="del" onclick="del(event)">Delete</button>`;
+                     <button id="delete-book" onclick="deleteBook(event)">Delete</button>`;
                      
     container[0].append(div);  
     popupOverlay.style.display = "none";
@@ -43,12 +43,13 @@ addBook.addEventListener("click", function(event){
 });
 
 //select delete button for delete the book collection summary
-// let del = document.getElementById("del");
+let deleteButton = document.getElementById("delete-book");
 
-// del.addEventListener("click", function(event){
-//     event.target.parentElement.remove();
-// });
+//only for a static book element
+deleteButton.addEventListener("click", function(event){
+        deleteBook(event);
+});
 
-function del(event){
+function deleteBook(event){
     event.target.parentElement.remove();
 }
